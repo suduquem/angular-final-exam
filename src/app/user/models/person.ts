@@ -1,12 +1,16 @@
+export interface IUserResponse {
+  data: IPerson;
+  status: number;
+}
+
 export interface IPerson {
-  data: {
-    name: {
-      first: string;
-      last: string;
-    };
+    name: IName;
     gender: string;
     profession: string;
     knowFor: string;
-  };
-  status: number;
+}
+
+export interface IName {
+    first: string;
+    last: string;
 }
