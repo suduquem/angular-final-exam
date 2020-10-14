@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
     this.userManagerService.getPerson().subscribe((response: IUserResponse) => {
       const { data, status } = response;
       this.greatPeople = data;
-      console.log('json', data);
+      console.log('json', data, 'status', status);
     });
   }
 }

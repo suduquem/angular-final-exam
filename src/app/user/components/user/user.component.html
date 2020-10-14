@@ -1,5 +1,10 @@
-<h1>Great People</h1>
-<h1>{{ name.first }} {{ name.last }}</h1>
-<p>{{ gender }}</p>
-<p>{{ profession }}</p>
-<p>{{ knowFor }}</p>
+<div class="container m-5">
+  <h2>Great People</h2>
+  <div class="card">
+    <div class="card-header">{{ name.first }} {{ name.last }}</div>
+    <div class="card-body">
+      <h5 class="card-title">{{ gender }} {{ profession }}</h5>
+      <p class="card-text">{{ knowFor }}</p>
+    </div>
+  </div>
+</div>
